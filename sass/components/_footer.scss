@@ -1,0 +1,148 @@
+.contacts-footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  li:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.contacts-logo {
+  color: $secondary-text-color;
+}
+
+.contacts-web {
+  color: $accent-color;
+}
+
+.contacts-logo,
+.contacts-web {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.contacts-address {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  padding-top: 20px;
+  padding-bottom: 9px;
+}
+
+.contacts-nav .link-footer {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer.list {
+  display: flex;
+}
+
+.footer-social {
+  margin-left: 70px;
+  margin-top: 12px;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-icon {
+  a {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  svg {
+    fill: $secondary-text-color;
+  }
+}
+
+.footer.list li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.mail-submit {
+  margin-left: 93px;
+  margin-top: 12px;
+}
+
+.mail-submit-title {
+  width: 219px;
+  height: 16px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.form-mail {
+  margin-top: 20px;
+}
+
+.mail-form {
+  width: 358px;
+  height: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: #2f303a;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 15px 0px 15px 16px;
+}
+
+.button-submit {
+  color: $secondary-text-color;
+  background-color: $accent-color;
+  font-weight: 700;
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  position: relative;
+  text-align: left;
+  padding-left: 29px;
+  margin-left: 10px;
+}
+
+.button-img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+  margin-left: 10px;
+  margin-top: 3px;
+}
