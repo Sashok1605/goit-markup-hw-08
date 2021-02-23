@@ -1,19 +1,24 @@
 .decision {
-  height: 600px;
+  // min-width: 1600px;
+  min-height: 400px;
   display: flex;
   text-align: center;
   justify-content: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  margin: 0px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  // margin: 0px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/people.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   &__button {
     color: $secondary-text-color;
     background-color: $accent-color;
+    // width: 100%;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -27,9 +32,41 @@
     :hover {
       color: $title-text-color;
       font-family: Roboto, sans-serif;
-      background-color: var$secondary-text-color;
+      background-color: $secondary-text-color;
       cursor: pointer;
       transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
     }
+  }
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+}
+
+.decision-title {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0px;
+  margin-bottom: 10px;
+  text-align: center;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
