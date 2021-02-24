@@ -42,10 +42,9 @@ a:focus {
 
 .container {
   width: 100%;
+  min-height: inherit;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
   @media screen and (min-width: 480px) {
     max-width: 450px;
     padding-left: 15px;

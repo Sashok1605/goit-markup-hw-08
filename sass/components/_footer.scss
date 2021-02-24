@@ -50,16 +50,38 @@
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    text-align: left;
+  }
 }
 
 .footer.list {
   display: flex;
+  justify-content: space-between;
+  width: 206px;
+  height: 44px;
+  margin: 0 auto;
 }
 
 .footer-social {
-  margin-left: 70px;
-  margin-top: 12px;
+  margin-top: 60px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 165px;
+    margin-top: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    margin-top: 12px;
+  }
 }
 
 .footer-title {
@@ -73,10 +95,17 @@
 
 .footer-icon {
   a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
   }
-
   svg {
+    width: 20px;
+    height: 20px;
     fill: $secondary-text-color;
   }
 }
@@ -85,9 +114,17 @@
   margin-right: 10px;
 }
 
+.footer-icon > a:hover,
+.footer-icon > a:focus {
+  background-color: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .mail-submit {
-  margin-left: 93px;
-  margin-top: 12px;
+  margin-top: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    margin-top: 12px;
+  }
 }
 
 .mail-submit-title {
@@ -95,9 +132,13 @@
   height: 16px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin: auto;
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
+  }
 }
 
 .form-mail {
@@ -105,7 +146,7 @@
 }
 
 .mail-form {
-  width: 358px;
+  width: 100%;
   height: 50px;
   font-weight: 400;
   font-size: 16px;
@@ -117,6 +158,10 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding: 15px 0px 15px 16px;
+  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 .button-submit {
